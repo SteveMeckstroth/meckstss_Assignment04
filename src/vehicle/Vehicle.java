@@ -1,5 +1,7 @@
 package vehicle;
 
+import vehicle.Control;
+
 /**
  * Model vehicles starting and stopping.
  * This is class is abstract and cannot be instantiated

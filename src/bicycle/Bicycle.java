@@ -1,6 +1,7 @@
 package bicycle;
 
 import vehicle.Vehicle;
+
 /**
  * A bicycle racing in the Tour de France
  * @author nicomp

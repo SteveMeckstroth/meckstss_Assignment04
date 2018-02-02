@@ -1,11 +1,13 @@
 package rocket;
 
+import vehicle.Vehicle;
+
 /**
  * A SpaceX passenger rocket on the launch pad
  * @author nicomp
  *
  */
-public class Rocket implements Vehicle {
+public class Rocket extends Vehicle {
 
 	/**
 	 * If true, Rocket is going
