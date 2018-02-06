@@ -3,6 +3,7 @@ package main;
 import airplane.Airplane;
 import bicycle.Bicycle;
 import rocket.Rocket;
+import skateboard.Hoverboard;
 import skateboard.Skateboard;
 
 /**
