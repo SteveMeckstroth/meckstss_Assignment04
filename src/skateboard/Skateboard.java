@@ -25,20 +25,24 @@ public class Skateboard extends Vehicle {
 	 * Is the Skateboard moving?
 	 * @return True if it's moving, false otherwise
 	 */
-	public Boolean isGoing() {
+	public boolean isGoing() {
 		return isRolling;
 	}
-
+	/**
+	 * Start rolling
+	 */
 	@Override
-	public Boolean start() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean start() {
+		isRolling = true;
+		return true;
 	}
-
+	/**
+	 * Stop rolling
+	 */
 	@Override
-	public Boolean stop() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean stop() {
+		
+		return true;
 	}
 
 

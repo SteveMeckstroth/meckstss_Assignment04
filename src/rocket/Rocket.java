@@ -22,20 +22,24 @@ public class Rocket extends Vehicle {
 	 * Is the Rocket moving?
 	 * @return True if it's moving, false otherwise
 	 */
-	public Boolean isGoing() {
+	public boolean isGoing() {
 		return isFuseLit;
 	}
-
+	/**
+	 * Light the fuse!
+	 */
 	@Override
-	public Boolean start() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean start() {
+		isFuseLit = true;
+		return true;
 	}
-
+	/**
+	 * Abort the launch!
+	 */
 	@Override
-	public Boolean stop() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean stop() {
+		isFuseLit = false;
+		return true;
 	}
 
 

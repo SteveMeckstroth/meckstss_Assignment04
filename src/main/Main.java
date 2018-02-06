@@ -1,12 +1,13 @@
 package main;
 
+import airplane.Airplane;
 import bicycle.Bicycle;
 import rocket.Rocket;
 import skateboard.Skateboard;
 
 /**
  * Test main for the Vehicle class and the hierarchy beneath it
- * @author nicomp
+ * @author nicomp, amended by meckstss 
  *
  */
 public class Main {
@@ -53,6 +54,34 @@ public class Main {
 
 		if (skateboard.isGoing()) {
 			System.out.println("Skateboard is going as expected.");
+			testPassed++;
+		} else {testFailed++;}
+		
+		/* Test the Airplane class */
+		Airplane airplane = new Airplane();
+		if (!airplane.isGoing()) {
+			System.out.println("Airplane is NOT going.");
+			testPassed++;
+		} else {testFailed++;}
+
+		airplane.start();
+
+		if (airplane.isGoing()) {
+			System.out.println("Airplane is going as expected.");
+			testPassed++;
+		} else {testFailed++;}
+		
+		/* Test the Hoverboard class */
+		Hoverboard hoverboard = new Hoverboard();
+		if (!hoverboard.isGoing()) {
+			System.out.println("Hoverboard is NOT going.");
+			testPassed++;
+		} else {testFailed++;}
+
+		hoverboard.start();
+
+		if (hoverboard.isGoing()) {
+			System.out.println("Hoverboard is going as expected.");
 			testPassed++;
 		} else {testFailed++;}
 
