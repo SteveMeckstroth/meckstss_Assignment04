@@ -22,8 +22,20 @@ public class Bicycle extends Vehicle {
 	 * Is the Bicycle moving?
 	 * @return True if it's moving, false otherwise
 	 */
-	public boolean isGoing() {
+	public Boolean isGoing() {
 		return isPedaling;
+	}
+
+	@Override
+	public Boolean start() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean stop() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

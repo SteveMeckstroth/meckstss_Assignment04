@@ -16,5 +16,10 @@ public interface Control {
 	 * @return True if it's started, false otherwise
 	 */
 	Boolean stop();
+	/**
+	 * Is the vehicle going somewhere (moving)
+	 * @return True if it is going, false otherwise
+	 */
+	Boolean isGoing();
 
 }

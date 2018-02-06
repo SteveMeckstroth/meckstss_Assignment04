@@ -13,8 +13,11 @@ public class Skateboard extends Vehicle {
 	 * If true, Skateboard is going
 	 */
 	private boolean isRolling;
-
-	public Skateboard Skateboard() {
+	
+	/**
+	 * Constructor
+	 */
+	public Skateboard() {
 		stop();
 	}
 
@@ -22,8 +25,20 @@ public class Skateboard extends Vehicle {
 	 * Is the Skateboard moving?
 	 * @return True if it's moving, false otherwise
 	 */
-	public boolean isGoing() {
+	public Boolean isGoing() {
 		return isRolling;
+	}
+
+	@Override
+	public Boolean start() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean stop() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

@@ -22,8 +22,20 @@ public class Rocket extends Vehicle {
 	 * Is the Rocket moving?
 	 * @return True if it's moving, false otherwise
 	 */
-	public boolean isGoing() {
+	public Boolean isGoing() {
 		return isFuseLit;
+	}
+
+	@Override
+	public Boolean start() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean stop() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
